@@ -1,6 +1,5 @@
 getCCF <- function(VCFdir,sAGPfile,output="new.vcf",nt=FALSE,nc=10,tc=11,AD=3,filter=TRUE,TCGA=TRUE){
 	new.dd=get(load(sAGPfile))
-	#AGP=read.table(AGPfile,header=T,stringsAsFactors=F)
 	newfile<-c()
 	sID<-unique(rownames(new.dd))
     if(nt){

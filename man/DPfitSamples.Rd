@@ -29,7 +29,7 @@ a list of prior parameters required for \code{DPdensity}. An example is data(pri
 a list of parameters required to run MCMC for \code{DPdensity}. An example is data(mcmc).
 }
 \item{nt}{
-logic. If TRUE, multi-thread processing is performed and R package \code{multicore} is required. This is currently not supported on Windows system.
+logical. If TRUE, multi-thread processing is performed.
 }
 }
 \value{

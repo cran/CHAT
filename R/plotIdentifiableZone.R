@@ -22,7 +22,7 @@ plotIdentifiableZone <- function(nt,nb,add=FALSE,legend=TRUE,title=TRUE){
 	polygon(c(ps,ps[n:1]),c(flpp,fhpp[n:1]),col=col.list[4],border=NA)
     col.borders=c('red2','orange3','dark green','deepskyblue')
 	if(legend){
-        legend(0.05,0.99,legend=c('A1','A2','B','C'),lty=1,lwd=2,col=col.borders)
+        legend(0.05,0.99,legend=c(expression(A[1]),expression(A[2]),'B','C'),lty=1,lwd=2,col=col.borders)
     }
     col.ccf=rgb(50,0,0,alpha=100,maxColorValue=255)
     if(nt==2&nb==0){
@@ -46,5 +46,5 @@ plotIdentifiableZone <- function(nt,nb,add=FALSE,legend=TRUE,title=TRUE){
     lines(ps,flpp,col=col.borders[4],lwd=2)
     lines(ps,fhpp,col=col.borders[4],lwd=2)
     segments(0,0,0,0.5,col=col.borders[4],lwd=2)
-    if(title)title(bquote(n[t]~'='~.(nt)~','~n[b]~'='~.(nb)),cex=2)
+    if(title)title(bquote(n[t]~'='~.(nt)~','~n[b]~'='~.(nb)),cex.main=2)
 }

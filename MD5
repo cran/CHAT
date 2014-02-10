@@ -1,4 +1,4 @@
-8fe43e7b1cce8848cdf20c1cd4bde29e *DESCRIPTION
+153185e0a832aaa4dff24129d0e04a00 *DESCRIPTION
 a90456fb51eafccfed9cc17ffc89c065 *NAMESPACE
 25ee2f15098b0091ee6470635dd13bcd *R/ApproxBIC.R
 ab343a78327699a22b5c5c0afc286387 *R/DPfitSamples.R
@@ -10,7 +10,7 @@ fc0d4ab203752a098841512b0bd4a1ce *R/Dist.R
 f567b5589e4a7bed5a8e4a08f316dc4c *R/getAGP.R
 94b7e2289e5ab2b95ae529886d08b795 *R/getAmpDel.R
 27da65b72b399e1aca084e96ba185299 *R/getBAFmean.R
-859a79df190fb17e14519ef576730d75 *R/getCCF.R
+25a55e6c420421e8a1ab1355b7cf780d *R/getCCF.R
 a2fa057af8aa97bfe8981adc7375dcb2 *R/getCanonicalLines.R
 487d59e14537b707f2a4763081b6f60e *R/getCoord.R
 1bfa8431ac5c25446a2f0941363653ca *R/getCosine.R
@@ -28,7 +28,7 @@ ab52e7a370f75af889dab1a3e54a44c1 *R/getPara.sAGP.R
 1e7a2161bae738f047ae9a3226e04d37 *R/getPermutation.R
 33663a599f13c106864f63135c657711 *R/getPloidy.R
 0fe56ea227a8f8e94a38443e26c569a2 *R/getSampleAGP.R
-b347e0552ec4d0369dc60b5682da6340 *R/getSampleCCF.R
+47133c322d117fbf596599522dd738a7 *R/getSampleCCF.R
 b7f78df79c53323c313b15dc57b4ba22 *R/getSeg.R
 8dbcfbc9fd717074a57004811723b9c5 *R/getSegChr.CBS.R
 6229fe0adf08e660c5a4e5de811b6396 *R/getSegChr.R
@@ -38,7 +38,7 @@ a1fff13a361e39924dee8069e4a62c79 *R/getSumDist.R
 4c5812203a61e28f8cf1d45e2c5ccaa2 *R/getsAGP.R
 938d2762dfbe7dff3cc4034fddc6fbb1 *R/is.nearCP.R
 dab1aec9b585b375a80304456151b017 *R/plotBAFLRR.R
-b191c0542df47b213e7b8f5df9d0b89b *R/plotIdentifiableZone.R
+eb7b768b4d09d6c825503803c6d25782 *R/plotIdentifiableZone.R
 d234bd2cb4b448938980251ec3c0217d *data/A0SD.BAF.rda
 0ca4b5dbd8baad1a4ab2df4a1f34fc0c *data/A0SD.LRR.rda
 f1cb0d115ed62762858680c2db173251 *data/datalist
@@ -47,8 +47,8 @@ b84075730d455fd104b2e7a0b2db6d34 *data/prior.rda
 e1af05cff833d1c993fee719dc86b49f *man/A0SD.BAF.Rd
 931389d6f23d1fc3f542fb0e7c8e76cb *man/A0SD.LRR.Rd
 978dc7bc4298a4103e4417b6340a7189 *man/ApproxBIC.Rd
-0c469727ff0d8a33d2be74c958b3ae1d *man/CHAT-package.Rd
-08d3bd20bbd2d5f6acc3f9f5fe4d091d *man/DPfitSamples.Rd
+4d89447f508003f03070cdb41aa7d2ce *man/CHAT-package.Rd
+73ee1db7823f405839b99d4df80f8d01 *man/DPfitSamples.Rd
 35da049ff921b0db117f55e22e44a71a *man/Dist.Rd
 d8b46c44555b9c4d3ac690168a94eedb *man/MergeBreakPointsByChr.Rd
 d0fe64cef3b17a5ad0c8680800dea0d2 *man/NormalizeLRR.Rd
@@ -57,7 +57,7 @@ c732c3ee2c752f4dcc10515102cc972d *man/findRobustPeaks.Rd
 aeb4b7920dc537f6a103a21769611f28 *man/getAGP.Rd
 0e29f92164543fdbc6f7d417c4fc70f7 *man/getAmpDel.Rd
 8f5ea9518fcb62297c897854643d80ec *man/getBAFmean.Rd
-4bfcfecb10295778ee3dc5e7a8edbd45 *man/getCCF.Rd
+98581e0ac4f0958f59b353aaca114e2c *man/getCCF.Rd
 9ad85873db70dc42907f0c1c16956688 *man/getCanonicalLines.Rd
 a2a97e12ec4887a8abc26fc4fd36f295 *man/getCoord.Rd
 e69106a4956a20ea82609a43a661e6fe *man/getCosine.Rd
@@ -70,13 +70,13 @@ fe2313086013fce8d6d03f6b4718b63d *man/getGrid.Rd
 932bbfa5cf25adf20d8c357513cb60fd *man/getLOH.Rd
 b755dac1df0e1873774f0cc5fc7ac47d *man/getOrigin.Rd
 d5096db98cbd8fc6f16799b039268ec4 *man/getPara.Rd
-6989d36c34c0345fc943035ed07e562e *man/getPara.sAGP.Rd
+631b1b772417d7739c2df8b2698f1909 *man/getPara.sAGP.Rd
 bf2dc0970c7de5d6137399c9de32efdf *man/getPeaks.Rd
 30f435501d75aeced65c83928cf9d399 *man/getPermutation.Rd
 021bb5676ef1dadb43a0bdc712b2c26d *man/getPloidy.Rd
 cce6fe81ab26112cc921af4900b737d3 *man/getSampleAGP.Rd
 b20535cfacc414c66efcdd83c4aee68b *man/getSampleCCF.Rd
-9502e5d43124ddd02f10bd68f0dec951 *man/getSeg.Rd
+6726d28ac7897a63016a664d75fe760e *man/getSeg.Rd
 393727f84a264af20d8ab98872df423c *man/getSegChr.CBS.Rd
 c68182f32e9b4ffdfdef099e7f278130 *man/getSegChr.Rd
 7114cd9c63fb0008bf4a72058365695d *man/getSegPurity.Rd

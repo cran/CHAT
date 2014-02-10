@@ -23,6 +23,6 @@ Bo Li <libo@umich.edu>
 \references{
 Li et al., Genomic estimates of aneuploid content in Glioblastoma Multiforme and imporved classification. _Clinical Cancer Research_, 2012.
 
-Li et al., A general framework for characterizing tumor subclonality using DNA sequencing and SNP array data. 2014
+Li et al., A general framework for characterizing tumor subclonality using DNA sequencing and SNP array data. 2014. Submitted to Genome Biology.
 }
 \keyword{ package }

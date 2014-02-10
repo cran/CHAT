@@ -28,7 +28,7 @@ The default parameters obtained from this function is essential to run \code{get
 \item{is.plot}{if TRUE, the process of estimating sAGP value for each data point will be shown on a prompted BAF-LRR plot. Default FALSE}
 \item{max.cn}{maximum copy number examined. Default ploidy+4}
 \item{strictness}{maximum sAGP value considered during optimization. By allowing it to be larger than 1, small noise around 1 could be tolerated. Default 1.1}
-\item{is.multicore}{if to use multiple thread to increase computational speed. Default FALSE. If TRUE, R package 'multicore' is required. Currently this option is not available for Windows system.}
+\item{is.multicore}{if to use multiple thread to increase computational speed. Default FALSE. }
 }
 \author{
 Bo Li

@@ -43,7 +43,7 @@ character string chosen from c('copy', 'log'). If 'copy', the value for LRR mark
 default 0. If assigned, must be an integer number indicating the index of one control sample in the sample list. This control will be used for all the samples.
   }
     \item{nt}{
- logic, if TRUE, multi-thread processing will be used. Require R package \code{multicore}. Not supported on Windows system.
+logical. If true, multi-thread processing is applied. This option is system dependent.
   }
 }
 \details{

@@ -51,18 +51,20 @@ getSampleCCF <- function(id,dd,VCFdir,thr.coverage=10,upper.cov=0.99,nc=10,tc=11
 	n<-nrow(sam.dd)
 	vv.int<-intersect(vv.somatic,vv.cov)
 	vv.int<-intersect(vv.int,vv.pass)
-    cc<-seq(0.02,1,by=0.02)
+    cc<-seq(0.02,1,by=0.01)
     computeSD <- function(N,S,f){
         M1list<-c()
         M2list<-c()
+        MLElist<-c()
         for(ii in 1:length(N)){
             PF<-sum(dbinom(S[ii],N[ii],f),na.rm=TRUE)
             M1<-sum(dbinom(S[ii],N[ii],f)*cc,na.rm=TRUE)/PF
             M2<-sum(dbinom(S[ii],N[ii],f)*cc^2,na.rm=TRUE)/PF
             M1list<-c(M1list,M1)
             M2list<-c(M2list,M2)
+            MLElist<-c(MLElist,cc[which.max(dbinom(S[ii],N[ii],f))])
         }
-        return(list(M1=M1list,SD=sqrt(M2list-M1list^2)))
+        return(list(M1=MLElist,SD=sqrt(M2list-M1list^2)))
     }
 	tmp.vcf<-vcf[vv.int,]
 	for(k in 1:n){
@@ -148,7 +150,7 @@ getSampleCCF <- function(id,dd,VCFdir,thr.coverage=10,upper.cov=0.99,nc=10,tc=11
 			z<-tmp.b/tmp.s
 			CCF<-rep(NA,nv)
             SDs<-rep(NA,nv)
-            ff.early=(cc+p)/nc
+            ff.early=(cc-p+(nt-nb)*p)/nc
             Ms.early=computeSD(tmp.s[vv.early.a],tmp.b[vv.early.a],ff.early)
 			CCF[vv.early.a]<-Ms.early$M1
             SDs[vv.early.a]<-Ms.early$SD

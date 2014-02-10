@@ -21,7 +21,7 @@ Rdata file saved by \code{getsAGP()}
 name of output VCF file.
 }
   \item{nt}{
-logical, if multi-thread processing is applied. If TRUE, R package 'multicore' must be installed. Currently this option is not supported on Windows system.
+logical, if multi-thread processing is applied. This option is system dependent.
 }
 \item{nc}{
 the column index in VCF file which coverage information for normal control sample is placed.
@@ -42,8 +42,8 @@ https://wiki.nci.nih.gov/display/TCGA/TCGA+Barcode
  }
 }
 \details{
-	In the return VCF, the field INFO is modified to include all the inferences. The additional fields in the INFO columns of the VCF file include (in exactly this order):
-	sample ID, coverage of reference allele in tumor, coverage of alternative allele in tumor, coverage of reference allele in control, coverage of alternative allele in control, CCF estimation, standard deviation of CCF, sAGP, nb, nt and lineage scenario.
+	In the returned VCF, the field INFO is modified to include all the inferences. The additional fields in the INFO columns of the VCF file include (in exactly this order):
+	sample ID, alternative allele count in tumor, total coverage in tumor, alternative allele count in control, total coverage in control, CCF estimation, standard deviation of CCF, sAGP, nb, nt and lineage scenario.
 }
 \value{
 NULL. A new VCF file containing all the somatic mutations from all the VCF files will be generated.
